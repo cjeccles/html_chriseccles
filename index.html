@@ -6,20 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-slate-300 pt-5">
+    <body class="bg-slate-300 pt-5 px-3">
         <section id="header" class="container mx-auto">
-            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-3">
                 <div class="md:flex">
                     <div class="md:shrink-0">
-                        <img class="h-60 w-full object-cover object-top md:h-full md:w-48" src="me.jpg" alt="Chris Eccles" />
+                        <img class="max-h-80 h-auto w-full object-cover object-top md:h-full md:w-48" src="me.jpg" alt="Chris Eccles" />
                    </div>
-                   <div class="uppercase tracking-wide text-sm text-black font-semibold">
-                        Chris Eccles
+                   <div class="tracking-wide text-sm text-black font-semibold pb-5">
+                        <h1 class="text-2xl ml-3 mt-3">Chris Eccles</h1>
+                        <h2 class="text-xl ml-3">Learning & Development Advisor</h2>
+                        <h3 class="text-md ml-3">Experience: 2 years</h3>
                    </div>
                 </div>
             </div>
         </section>
-        <section id="conent" class="container mx-auto">
+        <section id="content" class="container mx-auto md:grid md:grid-cols-2 md:gap-3 md:content-start md:max-w-2xl">
+            <div class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden mb-3 max-h-18">
+                    <div class="md:shrink-0 p-3">
+                        <h3 class="text-md text-blank font-semibold">About me</h3>
+                        <p>I'm just a guy that's looking to learn more about coding, and hoping to pursue a career in development!</p>
+                    </div>
+            </div>
+            <div id="prev-exp" class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden max-h-12 mb-3 pb-3 pr-6">
+                    <div class="md:shrink-0 p-3">
+                        <h3 class="text-md text-black font-semibold">Previous Professional Experience</h3>
+                    </div>
+                <div id="prev-roles" class="hidden">
+                    <div class="pl-3">
+                        <p>Previous Company: Tesco Stores Ltd</p>
+                        <p>Position Held: Checkout Manager</p>
+                        <p>Length of Service: 13 years</p>
+                    </div>
+                </div>
+                <span class="absolute top-2 right-2">
+                    <a href="#" class="text-amber-500 hover:text-amber-700" onclick="((this.innerHTML=='[+]') ? this.innerHTML='[&dash;]' : this.innerHTML='[+]');document.getElementById('prev-roles').classList.toggle('hidden');document.getElementById('prev-exp').classList.toggle('max-h-12')"">[+]</a>
+                </span>
+            </div>
 
         </section>
         <section id="footer" class="container mx-auto">

@@ -4,6 +4,7 @@
         <title>Chris Eccles - CV</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-slate-300 pt-5 px-3">
@@ -16,25 +17,25 @@
                    <div class="tracking-wide text-sm text-black font-semibold pb-5">
                         <h1 class="text-2xl ml-3 mt-3">Chris Eccles</h1>
                         <h2 class="text-xl ml-3">Learning & Development Advisor</h2>
-                        <h3 class="text-base ml-3">Secret Company, shhh 🤫</h3>
+                        <h3 class="text-base ml-3">Company Name 🤫</h3>
                         <h3 class="text-xs ml-3">Experience: 2 years</h3>
                    </div>
                 </div>
             </div>
         </section>
-        <section id="content" class="container mx-auto md:grid md:grid-cols-2 md:gap-3 md:content-start md:max-w-2xl">
-            <div class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden mb-3 max-h-18">
+        <section id="content" class="container mx-auto md:grid md:grid-cols-2 md:gap-x-3 md:gap-y-2 md:content-start md:max-w-2xl">
+            <div class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden max-h-18 mb-3 md:mb-auto">
                     <div class="md:shrink-0 p-3">
                         <h3 class="text-md text-blank font-semibold">About me</h3>
-                        <p>I'm just a guy that's looking to learn more about coding, and hoping to pursue a career in development!</p>
+                        <p class="text-sm">I'm just a guy that's looking to learn more about coding, and hoping to pursue a career in development!</p>
                     </div>
             </div>
-            <div id="prev-exp" class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden max-h-12 mb-3 pb-3 pr-6">
-                    <div class="md:shrink-0 p-3">
-                        <h3 class="text-md text-black font-semibold">Previous Professional Experience</h3>
-                    </div>
+            <div id="prev-exp" class="relative max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden max-h-12 pb-3 pr-6 mb-3 md:mb-auto">
+                <div class="md:shrink-0 p-3">
+                    <h3 class="text-md text-black font-semibold">Previous Professional Experience</h3>
+                </div>
                 <div id="prev-roles" class="hidden">
-                    <div class="pl-3">
+                    <div class="pl-3 text-sm">
                         <p>Previous Company: Tesco Stores Ltd</p>
                         <p>Position Held: Checkout Manager</p>
                         <p>Length of Service: 13 years</p>
@@ -44,10 +45,35 @@
                     <a href="#" class="text-amber-500 hover:text-amber-700" onclick="((this.innerHTML=='[+]') ? this.innerHTML='[&dash;]' : this.innerHTML='[+]');document.getElementById('prev-roles').classList.toggle('hidden');document.getElementById('prev-exp').classList.toggle('max-h-12')"">[+]</a>
                 </span>
             </div>
+            <div>
 
+            </div>
+            <div id="quals" class="relative md:max-w-2xl max-w-md mx-auto md:mx-0 bg-white rounded-xl shadow-md overflow-hidden max-h-18 col-span-2 p-3 mb-3 md:mb-auto">
+                <div class="md:shrink-0 pb-2">
+                    <h3 class="text-md text-black font-semibold">Qualifications</h3>
+                </div>
+                <div id="quals-expand">
+                    <div class="pl-1">
+                        <span class="text-md font-semibold block md:inline">HNC in Computing <em class="font-normal text-xs">University of Cumbria (2018-2021)</em></span>
+                        <span class="text-sm text-green-700">Pass with Distinction</span>
+                        <div class="text-sm">
+                            <p>Studied a broad aspect of computing including:</p>
+                            <ul class="list-disc pl-5">
+                                <li>Networking and Routing</li>
+                                <li>Dynamic Web Development</li>
+                                <li>Computer Programming (C#)</li>
+                                <li>Systems Development Methodologies</li>
+                                <li>Project Management Principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="footer" class="container mx-auto">
-
+            <div class="md:max-w-2xl max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-3 mt-3">
+                Connect with me on<a href="https://www.linkedin.com/in/chris-eccles-396295106"> <i class="text-blue-500 text-xl fa fa-linkedin-square"></i></a>
+            </div>
         </section>
     </body>
 </html>
